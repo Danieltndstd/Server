@@ -1,0 +1,399 @@
+package LogonServer;
+
+option optimize_for = LITE_RUNTIME;
+
+
+// 测试数据
+message PROTO_CESHI
+{
+	required int64				bUserID=1;							// 
+	required int32				cbPlayStatus=2;						// 
+	required int32				cbMaxCall=3;						//  
+}
+
+// Web注册账号
+message PROTO_RegisterAccounts
+{
+	required int64						cbGender=1;							//用户性别
+	required string						szAccounts=2;						//登录帐号
+	required string						szNickName=3;						//用户昵称
+	required string						szLogonPass=4;						//登录密码
+}
+
+// 102 2
+//帐号登录
+message PROTO_LogonAccountsBCode
+{
+	//系统信息
+	required int64							dwPlazaVersion=1;					//广场版本
+	required int32							cbDeviceType=2;						//设备类型
+
+	//登录信息
+	required string							szPassword=3;						//登录密码
+	required string							szAccounts=4;						//登录帐号
+
+	//连接信息
+	required string							szMachineID=5;						//机器标识
+	required string							szMobilePhone=6;					//电话号码
+	
+	// 绑定要求信息
+	required int64							dwInviteID=7;						//邀请码
+	required int64							dwSortID=8;							//分类码
+	
+	required int64							dwLogonType=9;						// 登录类型 0 登录 1 注册 2 不区分
+}
+
+// 102 3
+//注册帐号
+message PROTO_RegisterAccountsBCode
+{
+	//系统信息
+	required int32								cbDeviceType=1;				//设备类型
+
+	//密码变量
+	required string								szLogonPass=2;				//登录密码
+	required string								szInsurePass=3;				//银行密码
+
+	//注册信息
+	required int64								wFaceID=4;					//头像标识
+	required int32								cbGender=5;					//用户性别
+	required string								szAccounts=6;				//登录帐号
+	required string								szNickName=7;				//用户昵称
+
+	//连接信息
+	required string								szMachineID=8;				//机器标识
+	required string								szMobilePhone=9;			//电话号码
+
+	required int64								dwSpreaderID=10;			//推广码
+}
+
+// 102 4
+//游客登录
+message PROTO_LogonVisitor
+{
+	//系统信息
+	required int64							dwPlazaVersion=1;						//广场版本
+	required int64							cbDeviceType=2;                       //设备类型
+
+	//连接信息
+	required string							szMachineID=3;		//机器标识
+	required string							szSpreader=4;			//推广员账号
+	
+	// 绑定要求信息
+	required int64							dwInviteID=5;						//邀请码
+	required int64							dwSortID=6;							//分类码
+
+	required int64							dwLogonType=7;						// 登录类型 0 登录 1 注册 2 不区分		
+}
+
+// 102 6
+//手机注册
+message PROTO_RegisterMobile
+{
+	required string							szMobilePhone=1;		//手机号码
+	required string							szLogonPass=2;					//登录密码
+	required string							szMachineID=3;			//机器标识
+	required string							szVerificationCode=4;//验证码
+}
+
+// 102 100
+//登录成功
+message PROTO_LogonSuccessBCode
+{
+	//用户属性
+	required int64							wFaceID=1;							//头像标识
+	required int32							cbGender=2;							//用户性别
+	required int64							dwUserID=3;							//用户 I D
+	required int64							dwGameID=4;							//游戏 I D
+	required int64							dwExperience=5;						//经验数值
+	required int32							cbMemberOrder=6;					//会员等级
+
+	//用户成绩
+	required int64							dwUserMedal=7;						//用户奖牌
+	required int64							lUserScore=8;						//用户元宝
+	required int64							lUserInsure=9;						//用户银行
+
+	//扩展信息
+	required int64							dwInoutIndex=10;					//记录索引
+
+	required int64							lRevenue=11;						//用户税收
+	required int64							lLobbyLV=12;						//大厅经验
+
+	required int32							cbVisitorClient=13;					//游客标识 0否 1是
+
+	//描述信息
+	required string							szNickName=14;						//用户昵称
+	required string							szAccounts=15;						//登录帐号
+	required string							szUnderWrite=16;					//个性签名
+
+	required int64							dwServerID=17;						//房间ID，0不是断线重连
+}
+
+
+
+// 102 102
+// Wen 登录成功
+message PROTO_LogonFinish
+{
+	required int32						cbLogonFinish=1;							//登录成功
+}
+
+// 102 101
+// 登录失败
+message PROTO_OperateResult
+{	
+	required int32							wSubCommandID=1;						//消息用途
+	required int64							dwResultCode=2;							//操作代码
+	required string							szDescribeString=3;						//描述消息
+}
+
+
+
+//服务处理
+
+// 3 101
+//修改密码
+message PROTO_ModifyLogonPass
+{
+	required string							szAccounts=1;							//用户账号
+	required string							szScrPassword=2;						//用户密码
+	required string							szDesPassword=3;						//用户密码
+}
+// 3 104
+//修改昵称
+message PROTO_ModifyNickName
+{
+	required int64							dwUserID=1;							//用户 ID
+	required string							szNickName=2;						//用户昵称
+};
+
+// 3 900
+// 操作结果
+message PROTO_ModifyResult
+{
+	required int64						cbResultCode=1;
+	required int64						wSubCommandID=2;
+	required string						szDescribe=3;
+};
+
+// 3 400
+//存入金币
+message PROTO_UserSaveScore
+{
+	required int64							dwUserID=1;							//用户 I D
+	required int64							lSaveScore=2;						//存入金币
+	required string							szMachineID=3;						//机器序列
+};
+// 3 401
+//提取金币
+message PROTO_UserTakeScore
+{
+	required int64							dwUserID=1;							//用户 I D
+	required int64							lTakeScore=2;						//提取金币
+	required string							szPassword=3;						//银行密码
+	required string							szMachineID=4;						//机器序列
+};
+// 3 404
+// 查询银行
+message PROTO_QueryInsureInfo
+{
+	required int64							dwUserID=1;							//用户 ID
+};
+// 3 405
+//银行成功
+message PROTO_UserInsureSuccess
+{
+	required int64							dwUserID=1;							//用户 I D
+	required int64							lUserScore=2;						//用户金币
+	required int64							lUserInsure=3;						//银行金币
+	required string							szDescribeString=4;					//描述消息
+};
+// 3 406
+//银行失败
+message PROTO_UserInsureFailure
+{
+	required int64							lResultCode=1;						//错误代码
+	required string							szDescribeString=2;					//描述消息
+};
+
+
+// 3 510
+// 获取转盘信息
+message PROTO_GetDialInfo
+{
+	required int64							dwUserID=1;							//用户 ID
+};
+
+// 3 511
+//获取转盘信息
+message PROTO_GetDailInfoResult
+{
+	required int64					dwSilverConsume=1;				//白银消耗
+	required int64					dwGoldConsume=2;					//黄金消耗
+	required int64					dwJewelConsume=3;					//钻石消耗
+
+	required int64					dwDrawScore=4;					//抽奖积分
+	required int64					dwAddScore=5;						//下注积分
+
+	repeated int64					dwDailInfo=6;				// 转盘信息
+	
+};
+
+// 3 512
+// 转动转盘领取奖励
+message PROTO_RotateDailAward
+{
+	required int64							dwUserID=1;							// 用户ID
+	required int64							dwDailType=2;							// 转盘类型
+};
+
+// 3 513
+//获取转盘信息
+message PROTO_RotateDailAwardInfo
+{
+	required int64					dwResultCode=1;						//操作代码
+	required string					szDescribeString=2;				//描述消息
+
+	required int64					dwUserID=3;						// 用户信息
+	required int64					dwDailType=4;						// 奖励类型
+
+	required int64					dwDailAward=5;					// 奖励数量
+	required int64					dwAwardID=6;						// 奖励ID
+	required int64					dwConsumeSum=7;					// 消耗数量
+
+	required int64					dwSilverConsume=8;				//白银消耗
+	required int64					dwGoldConsume=9;					//黄金消耗
+	required int64					dwJewelConsume=10;					//钻石消耗
+
+	required int64					dwDrawScore=11;					//抽奖积分
+	required int64					dwAddScore=12;						//下注积分
+
+	repeated int64					dwDailInfo=13;				// 转盘信息
+};
+
+// 3 500
+// 获取签到
+message PROTO_GetUserSignIn
+{
+	required int64							dwUserID=1;							//用户 ID
+};
+
+// 3 501
+// 签到
+message PROTO_SetUserSignIn
+{
+	required int64							dwUserID=1;							//用户 ID
+};
+
+// 3 520
+// 获取签到结果
+//获取签到结果
+message PROTO_GetSignInResult
+{
+	required int32 wSignInNum=1;		//已经签到天数
+	required int32 cbTodayIsSinIn=2;    //今天是否已经签到 0没有 1已经签到
+	required int64							dwResultCode=3;						//操作代码
+	required string							szDescribeString=4;				//描述消息
+};
+
+// 3 530
+// 查询绑定银行卡
+message PROTO_ChickBindBank
+{
+	required int64							dwUserID=1;								// 查询用户
+};
+
+// 3 531
+// 绑定银行卡
+message PROTO_GP_BindBankCard
+{
+	required int64							dwUserID=1;								// 查询用户
+	required string							szBankName=2;							// 银行名字
+	required string							szBankCardNum=3;						// 银行卡号
+	required string							szAccountHolder=4;						// 开户人
+};
+
+// 3 532
+// 查询绑定支付宝
+message PROTO_ChickBindZFB
+{
+	required int64							dwUserID=1;								// 查询用户
+};
+
+// 3 533
+// 绑定支付宝
+message PROTO_BindZFB
+{
+	required int64							dwUserID=1;								// 查询用户
+	required string							szZFBName=2;							// 支付宝账号
+	required string							szNickName=3;							// 用户名字
+};
+
+// 3 534
+// 绑定银行卡信息
+message PROTO_BindBankInfo
+{
+	required int64							wSubCommandID=1;						//消息用途
+	required int64							dwResultCode=2;						//操作代码
+	required string							szDescribeString=3;				//描述消息
+
+	required string							szBankName=4;						// 银行名字
+	required string							szBankCardNum=5;					// 银行卡号
+	required string							szAccountHolder=6;				// 开户人
+};
+
+// 3 535
+// 绑定支付宝信息
+message PROTO_BindZFBInfo
+{
+	required int64							wSubCommandID=1;						//消息用途
+	required int64							dwResultCode=2;						//操作代码
+	required string							szDescribeString=3;				//描述消息
+
+	required string							szZFBName=4;						// 支付宝账号
+	required string							szNickName=5;						// 用户名字
+};
+
+// 3 603
+// 请求邮件
+message PROTO_RequestMail
+{
+	required int64							dwUserID=2;							// 查询用户
+};
+
+// 3 604
+// 读取删除邮件
+message PROTO_ReadDeleteMail
+{
+	required int64							dwUserID=2;							// 查询用户
+
+	required int64							dwOpenType=3;							// 操作标识 0 读取 1 删除
+	required int64							dwMailIndex=4;						// 邮件标识
+};
+
+// 邮件信息
+message ProtoRequestMail
+{
+	required int64							dwMailIndex=1;						// 邮件标识
+	required string							szMailContent=2;					// 邮件内容
+};
+// 3 608
+// 请求邮件
+message PROTO_RequestMailToal
+{
+	required int64							dwUserID=1;							// 用户ID
+	repeated ProtoRequestMail				stRequestMail=2;					// 邮件内容
+};
+// 3 609
+// 读取删除邮件
+message PROTO_ReadDeleteMailToal
+{
+	required int64							dwUserID=1;							// 用户ID
+	required int64							dwOpenType=2;						// 操作标识 0 读取 1 删除
+	required int64							dwResultCode=3;						// 操作代码
+	repeated ProtoRequestMail				stRequestMail=4;					// 邮件内容
+};
+
+
+
+

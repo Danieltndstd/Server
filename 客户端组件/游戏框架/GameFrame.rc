@@ -1,0 +1,547 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""Res\\GameFrame.rc2""  // 不是由 Microsoft Visual C++ 编辑过的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 8,0,0,0
+ PRODUCTVERSION 8,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "Comments", "深圳嘉晟博网络科技有限公司"
+            VALUE "CompanyName", "深圳嘉晟博网络科技有限公司"
+            VALUE "FileDescription", "游戏框架"
+            VALUE "FileVersion", "8.0.0.0"
+            VALUE "InternalName", "GameFrame.dll"
+            VALUE "LegalCopyright", "深圳嘉晟博网络科技有限公司保留所有权利。"
+            VALUE "OriginalFilename", "GameFrame.dll"
+            VALUE "ProductName", "游戏框架"
+            VALUE "ProductVersion", "8.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_FRAME_BL            BITMAP                  "Res\\GAME_FRAME\\FRAME_BL.bmp"
+IDB_FRAME_BM            BITMAP                  "Res\\GAME_FRAME\\FRAME_BM.bmp"
+IDB_FRAME_BR            BITMAP                  "Res\\GAME_FRAME\\FRAME_BR.bmp"
+IDB_FRAME_ML            BITMAP                  "Res\\GAME_FRAME\\FRAME_ML.bmp"
+IDB_FRAME_MR            BITMAP                  "Res\\GAME_FRAME\\FRAME_MR.bmp"
+IDB_FRAME_TL            BITMAP                  "Res\\GAME_FRAME\\FRAME_TL.bmp"
+IDB_FRAME_TM            BITMAP                  "Res\\GAME_FRAME\\FRAME_TM.bmp"
+IDB_FRAME_TR            BITMAP                  "Res\\GAME_FRAME\\FRAME_TR.bmp"
+IDB_BT_CLOSE            BITMAP                  "Res\\GAME_FRAME\\BT_CLOSE.bmp"
+IDB_BT_MAX              BITMAP                  "Res\\GAME_FRAME\\BT_MAX.bmp"
+IDB_BT_MIN              BITMAP                  "Res\\GAME_FRAME\\BT_MIN.bmp"
+IDB_BT_RESORE           BITMAP                  "Res\\GAME_FRAME\\BT_RESORE.bmp"
+IDB_USER_LIST_BL        BITMAP                  "Res\\USER_LIST\\USER_LIST_BL.bmp"
+IDB_USER_LIST_BM        BITMAP                  "Res\\USER_LIST\\USER_LIST_BM.bmp"
+IDB_USER_LIST_BR        BITMAP                  "Res\\USER_LIST\\USER_LIST_BR.bmp"
+IDB_USER_LIST_TL        BITMAP                  "Res\\USER_LIST\\USER_LIST_TL.bmp"
+IDB_USER_LIST_TM        BITMAP                  "Res\\USER_LIST\\USER_LIST_TM.bmp"
+IDB_USER_LIST_TR        BITMAP                  "Res\\USER_LIST\\USER_LIST_TR.bmp"
+IDB_USER_LIST_ML        BITMAP                  "Res\\USER_LIST\\USER_LIST_ML.bmp"
+IDB_USER_LIST_MR        BITMAP                  "Res\\USER_LIST\\USER_LIST_MR.bmp"
+IDB_BT_CHAT_BUTTON_1    BITMAP                  "Res\\GAME_CHAT\\BT_CHAT_BUTTON_1.bmp"
+IDB_BT_CHAT_BUTTON_2    BITMAP                  "Res\\GAME_CHAT\\BT_CHAT_BUTTON_2.bmp"
+IDB_BT_CHAT_BUTTON_3    BITMAP                  "Res\\GAME_CHAT\\BT_CHAT_BUTTON_3.bmp"
+IDB_BT_CHAT_BUTTON_4    BITMAP                  "Res\\GAME_CHAT\\BT_CHAT_BUTTON_4.bmp"
+IDB_BT_CHAT_SHORT       BITMAP                  "Res\\GAME_CHAT\\BT_CHAT_SHORT.bmp"
+IDB_BT_SEND_CHAT        BITMAP                  "Res\\GAME_CHAT\\BT_SEND_CHAT.bmp"
+IDB_CHAT_BL             BITMAP                  "Res\\GAME_CHAT\\CHAT_BL.bmp"
+IDB_CHAT_BM             BITMAP                  "Res\\GAME_CHAT\\CHAT_BM.bmp"
+IDB_CHAT_BR             BITMAP                  "Res\\GAME_CHAT\\CHAT_BR.bmp"
+IDB_CHAT_ML             BITMAP                  "Res\\GAME_CHAT\\CHAT_ML.bmp"
+IDB_CHAT_MR             BITMAP                  "Res\\GAME_CHAT\\CHAT_MR.bmp"
+IDB_CHAT_TL             BITMAP                  "Res\\GAME_CHAT\\CHAT_TL.bmp"
+IDB_CHAT_TM             BITMAP                  "Res\\GAME_CHAT\\CHAT_TM.bmp"
+IDB_CHAT_TR             BITMAP                  "Res\\GAME_CHAT\\CHAT_TR.bmp"
+IDB_USER_INFO_R         BITMAP                  "res\\USER_INFO\\USER_INFO_R.bmp"
+IDB_USER_INFO_L         BITMAP                  "res\\USER_INFO\\USER_INFO_L.bmp"
+IDB_USER_INFO_M         BITMAP                  "res\\USER_INFO\\USER_INFO_M.bmp"
+IDB_BT_CHAT_CLOSE       BITMAP                  "res\\GAME_CHAT\\BT_CHAT_CLOSE.bmp"
+IDB_BT_CHAT_CONTROL     BITMAP                  "res\\GAME_CHAT\\BT_CHAT_CONTROL.bmp"
+IDB_CHAT_CONTROL_BACK   BITMAP                  "res\\GAME_CHAT\\CHAT_CONTROL_BACK.bmp"
+IDB_GAME_PROPERTY_L     BITMAP                  "res\\GAME_PROPERTY\\GAME_PROPERTY_L.bmp"
+IDB_GAME_PROPERTY_M     BITMAP                  "res\\GAME_PROPERTY\\GAME_PROPERTY_M.bmp"
+IDB_GAME_PROPERTY_R     BITMAP                  "res\\GAME_PROPERTY\\GAME_PROPERTY_R.bmp"
+IDB_GAME_PROPERTY_ITEM  BITMAP                  "res\\GAME_PROPERTY\\GAME_PROPERTY_ITEM.bmp"
+IDB_BT_USER_INFO        BITMAP                  "res\\USER_INFO\\BT_USER_INFO.bmp"
+IDB_USER_MEDAL_R        BITMAP                  "res\\USER_MEDAL\\USER_MEDAL_R.bmp"
+IDB_USER_MEDAL_L        BITMAP                  "res\\USER_MEDAL\\USER_MEDAL_L.bmp"
+IDB_USER_MEDAL_M        BITMAP                  "res\\USER_MEDAL\\USER_MEDAL_M.bmp"
+IDB_BT_RULE             BITMAP                  "Res\\GAME_FRAME\\BT_RULES.bmp"
+IDB_BT_OPTION           BITMAP                  "Res\\GAME_FRAME\\BT_SET.bmp"
+IDB_BT_MUTE             BITMAP                  "res\\game_frame\\BT_MUSIC.bmp"
+IDB_OPTION_LOGO         BITMAP                  "res\\game_frame\\OPTION_LOGO.bmp"
+IDB_BT_SLIENT           BITMAP                  "res\\game_frame\\BT_SLIENT.bmp"
+IDB_BT_CLOSE_AWARDS     BITMAP                  "res\\GAME_MATCH\\BT_CLOSE.bmp"
+IDB_GETGOLD             BITMAP                  "res\\GAME_INSURE\\BT_GETGOLD.bmp"
+IDB_SAVEGOLD            BITMAP                  "res\\GAME_INSURE\\BT_SAVEGOLD.bmp"
+IDB_CLOSE               BITMAP                  "res\\GAME_INSURE\\BT_CLOSE.bmp"
+IDB_BT_FRESH            BITMAP                  "res\\GAME_INSURE\\BT_FRESH.bmp"
+IDB_ZJG_ALL             BITMAP                  "Res\\GAME_INSURE_ZJG\\all.bmp"
+IDB_ZJG_CLOSE           BITMAP                  "Res\\GAME_INSURE_ZJG\\close.bmp"
+IDB_ZJG_LINK            BITMAP                  "Res\\GAME_INSURE_ZJG\\link.bmp"
+IDB_ZJG_MAINBAKER       BITMAP                  "Res\\GAME_INSURE_ZJG\\main.bmp"
+IDB_ZJG_MAKESURE        BITMAP                  "Res\\GAME_INSURE_ZJG\\sure.bmp"
+IDB_BT_RECORD_CLOSE     BITMAP                  "Res\\GAME_RECORD_ZJG\\BT_CLOSE.bmp"
+IDB_BT_RECORD_MIN       BITMAP                  "Res\\GAME_RECORD_ZJG\\BT_MIN.bmp"
+IDB_BT_RECORD_OPEN      BITMAP                  "Res\\GAME_RECORD_ZJG\\BT_OPEN.bmp"
+IDB_BT_RECORD_PAUSE     BITMAP                  "Res\\GAME_RECORD_ZJG\\BT_PAUSE.bmp"
+IDB_BT_RECORD_PLAY      BITMAP                  "Res\\GAME_RECORD_ZJG\\BT_PLAY.bmp"
+IDB_BT_OPEN_CHAT        BITMAP                  "Res\\GAME_FRAME\\BT_CHAT_OPEN.bmp"
+IDB_BT_CLOSE_CHAT       BITMAP                  "Res\\GAME_FRAME\\BT_CHAT_OPEN_CLOSE.bmp"
+IDB_CONTROL_BL          BITMAP                  "Res\\GAME_CONTROL\\BL.bmp"
+IDB_CONTROL_BM          BITMAP                  "Res\\GAME_CONTROL\\BM.bmp"
+IDB_CONTROL_BR          BITMAP                  "Res\\GAME_CONTROL\\BR.bmp"
+IDB_CONTROL_ML          BITMAP                  "Res\\GAME_CONTROL\\ML.bmp"
+IDB_CONTROL_MM          BITMAP                  "Res\\GAME_CONTROL\\MM.bmp"
+IDB_CONTROL_MR          BITMAP                  "Res\\GAME_CONTROL\\MR.bmp"
+IDB_CONTROL_TL          BITMAP                  "Res\\GAME_CONTROL\\TL.bmp"
+IDB_CONTROL_TM          BITMAP                  "Res\\GAME_CONTROL\\TM.bmp"
+IDB_CONTROL_TR          BITMAP                  "Res\\GAME_CONTROL\\TR.bmp"
+IDB_VOLUMN_OK           BITMAP                  "Res\\GAME_OPTION\\setVolumeBtn1.bmp"
+IDB_VOLUMN_CANCEL       BITMAP                  "Res\\GAME_OPTION\\setVolumeBtn2.bmp"
+IDB_VOLUMN_CLOSE        BITMAP                  "Res\\GAME_OPTION\\xx.bmp"
+IDB_BT_CHAT_BUTTON      BITMAP                  "Res\\GAME_CONTROL\\Chat.bmp"
+IDB_BT_CANCEL           BITMAP                  "Res\\GAME_CLOSE\\BT_CANCEL.bmp"
+IDB_BT_OK               BITMAP                  "Res\\GAME_CLOSE\\BT_OK.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+MEMBER_FLAG             PNG                     "res\\MEMBER_FLAG.png"
+USER_READY              PNG                     "Res\\USER_READY.png"
+BT_CHAT_BUTTON_1        PNG                     "Res\\GAME_CHAT\\BT_CHAT_BUTTON_1.png"
+BT_CHAT_BUTTON_2        PNG                     "Res\\GAME_CHAT\\BT_CHAT_BUTTON_2.png"
+BT_CHAT_BUTTON_3        PNG                     "Res\\GAME_CHAT\\BT_CHAT_BUTTON_3.png"
+BT_CHAT_BUTTON_4        PNG                     "Res\\GAME_CHAT\\BT_CHAT_BUTTON_4.png"
+USER_CLOCK_ITEM         PNG                     "Res\\USER_CLOCK_ITEM.png"
+USER_CLOCK_BACK         PNG                     "res\\USER_CLOCK_BACK.png"
+LOAD_STATUS             PNG                     "res\\LOAD_STATUS.PNG"
+BT_LOVE_LINESS          PNG                     "res\\USER_INFO\\BT_LOVE_LINESS.PNG"
+BT_USER_DEMAL           PNG                     "res\\USER_INFO\\BT_USER_DEMAL.PNG"
+MEDAL_COUNT             PNG                     "res\\USER_MEDAL\\MEDAL_COUNT.png"
+MEDAL_STRING_L          PNG                     "res\\USER_MEDAL\\MEDAL_STRING_L.png"
+MEDAL_STRING_R          PNG                     "res\\USER_MEDAL\\MEDAL_STRING_R.png"
+BANK_FRAME              PNG                     "res\\GAME_INSURE\\BANK_FRAME.png"
+BANKNUM                 PNG                     "res\\GAME_INSURE\\BANKNUM.png"
+MATCH_INFO              PNG                     "res\\GAME_MATCH\\MATCH_INFO.png"
+MATCH_WAIT_TIP          PNG                     "res\\GAME_MATCH\\WAIT_TIP.png"
+NUMBER_ORANGE           PNG                     "res\\GAME_MATCH\\NUMBER_ORANGE.png"
+NUMBER_GREEN            PNG                     "res\\GAME_MATCH\\NUMBER_GREEN.png"
+MATCH_LINE              PNG                     "res\\GAME_MATCH\\LINE.png"
+MATCH_AWARDS            PNG                     "res\\GAME_MATCH\\MATCH_AWARDS.png"
+ZJGBANKNUM              PNG                     "Res\\GAME_INSURE_ZJG\\zjgbanknum.png"
+IDP_RECORD_BACK         PNG                     "Res\\GAME_RECORD_ZJG\\IMAGE_BACK.png"
+IDP_RECORD_SHOE         PNG                     "Res\\GAME_RECORD_ZJG\\IMAGE_SHOE.png"
+IDP_RECORD_SLIDER       PNG                     "Res\\GAME_RECORD_ZJG\\IMAGE_SLIDER.png"
+IDP_RECORD_SLIDER_BACK  PNG                     "Res\\GAME_RECORD_ZJG\\IMAGE_SLIDER_BACK.png"
+IDP_SLIDER              PNG                     "Res\\GAME_OPTION\\setVolumeBar.png"
+IDP_SLIDER_BACK         PNG                     "Res\\GAME_OPTION\\setVolumeBarBG.png"
+IDP_BACK                PNG                     "Res\\GAME_OPTION\\setVolumeBG.png"
+IDP_SHOE                PNG                     "Res\\GAME_OPTION\\setVolumeBrace.png"
+IDP_CHECK               PNG                     "Res\\GAME_OPTION\\setVolumeCHK.png"
+IDP_TEXT1               PNG                     "Res\\GAME_OPTION\\setVolumeText1.png"
+IDP_TEXT2               PNG                     "Res\\GAME_OPTION\\setVolumeText2.png"
+IDP_TEXT3               PNG                     "Res\\GAME_OPTION\\setVolumeText3.png"
+BACKGROUND              PNG                     "Res\\GAME_CONTROL\\control.bg.png"
+SPLITSTRIP              PNG                     "Res\\GAME_FRAME\\SPLIT_STRIP.png"
+IDP_CLOSE_BACK          PNG                     "Res\\GAME_CLOSE\\CLOSE_BACK.png"
+MATCH_BASE              PNG                     "Res\\GAME_MATCH\\CurrentBaseScore.png"
+MATCH_RANK              PNG                     "Res\\GAME_MATCH\\Rank.png"
+MATCH_BG                PNG                     "Res\\GAME_MATCH\\match.bg.png"
+MATCH_TIME              PNG                     "Res\\GAME_MATCH\\MatchTime.png"
+MATCH_TURNDRAW          PNG                     "Res\\GAME_MATCH\\TurnDraw.png"
+MATCH_TIMER_NUM         PNG                     "Res\\GAME_MATCH\\MatchTimerNum.png"
+MATCH_TIME2             PNG                     "Res\\GAME_MATCH\\MatchTime_2.png"
+MATCH_TIME3             PNG                     "Res\\GAME_MATCH\\MatchTime_3.png"
+MATCH_TIME4             PNG                     "Res\\GAME_MATCH\\MatchTime_4.png"
+PROGRESS_TITLE          PNG                     "Res\\GAME_FRAME\\PROGRESS_GOING.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// GLAD
+//
+
+GLAD_FRAME_TR           PNG                    "Res\\GAME_GLAD\\GLAD_TR.png"
+GLAD_FRAME_TL           PNG                    "Res\\GAME_GLAD\\GLAD_TL.png"
+GLAD_FRAME_TM           PNG                    "Res\\GAME_GLAD\\GLAD_TM.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_GAME_CONTROL DIALOGEX 0, 0, 188, 321
+STYLE DS_SETFONT | DS_CENTER | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_USER_LIST_CONTROL,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SHAREIMAGELISTS | LVS_OWNERDRAWFIXED | LVS_ALIGNLEFT | WS_TABSTOP,2,0,186,182
+    PUSHBUTTON      "",IDC_BT_CHAT_BUTTON_1,2,283,14,12
+    PUSHBUTTON      "",IDC_BT_CHAT_BUTTON_2,18,283,14,12,NOT WS_VISIBLE
+    PUSHBUTTON      "",IDC_BT_CHAT_BUTTON_3,33,283,14,12,NOT WS_VISIBLE
+    PUSHBUTTON      "",IDC_BT_CHAT_BUTTON_4,50,283,14,12
+    PUSHBUTTON      "",IDC_BT_CHAT_SHORT,141,298,16,14,NOT WS_VISIBLE
+    PUSHBUTTON      "",IDC_BT_SEND_CHAT,171,298,14,12
+    COMBOBOX        IDC_CHAT_EDIT,5,299,90,30,CBS_DROPDOWN | CBS_OWNERDRAWFIXED | CBS_AUTOHSCROLL | CBS_HASSTRINGS | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_CHAT_MESSAGE,"RichEdit20W",WS_VSCROLL | WS_TABSTOP | 0x904,5,184,160,111
+    PUSHBUTTON      "",IDC_REGAIN_BUTTON,19,0,50,14
+END
+
+IDD_GAME_OPTION DIALOGEX 0, 0, 239, 191
+STYLE DS_SETFONT | WS_POPUP | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_SYSMENU
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "确 定",IDOK,30,173,50,14
+    PUSHBUTTON      "取 消",IDCANCEL,158,173,50,14
+    CONTROL         "",IDC_ITEM_TAB,"SysTabControl32",0x0,4,22,230,144
+    PUSHBUTTON      "默 认",IDC_DEFAULT,94,173,50,14
+END
+
+IDD_GENERAL_OPTION DIALOGEX 0, 0, 159, 147
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "允许其他玩家旁观",IDC_ALLOW_LOOKON,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,27,25,80,10
+    CONTROL         "允许我的好友旁观",IDC_ALLOW_FRIEND_LOOKON,"Button",BS_AUTOCHECKBOX | BS_FLAT | NOT WS_VISIBLE | WS_TABSTOP,27,38,80,10
+    CONTROL         "允许游戏声音效果",IDC_ALLOW_SOUND,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,27,74,80,10
+    CONTROL         "显示用户进出消息",IDC_NOTIFY_USER_INOUT,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,27,102,80,10
+    CONTROL         "屏蔽厌恶玩家信息",IDC_DEBAR_DETEST_CHAT,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,27,116,80,10
+    CONTROL         "全屏幕游戏界面模式",IDC_FULL_GAME_VIEW,"Button",BS_AUTOCHECKBOX | BS_FLAT | NOT WS_VISIBLE | WS_TABSTOP,27,130,88,10
+    LTEXT           "旁观设置：",IDC_STATIC,12,9,41,8
+    LTEXT           "其他设置：",IDC_STATIC,12,59,41,8
+    CONTROL         "允许游戏背景音乐",IDC_ALLOW_BACK_SOUND,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,27,88,80,10
+END
+
+IDD_GAME_RULE DIALOGEX 0, 0, 503, 405
+STYLE DS_SETFONT | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_SYSMENU
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+END
+
+IDD_BANK_STORAGE DIALOGEX 0, 0, 331, 228
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_SYSMENU
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    LTEXT           "请输入元宝数目：",-1,42,111,73,9
+    EDITTEXT        IDC_IN_COUNT,120,109,114,13,ES_AUTOHSCROLL
+    LTEXT           "请输入密码：",IDC_STATIC_PASS,42,132,51,9
+    EDITTEXT        IDC_USER_PASSWORD,120,129,114,13,ES_PASSWORD | ES_AUTOHSCROLL
+    CONTROL         "全部元宝",IDC_CHECK_ALL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,240,111,48,11
+END
+
+IDD_DLG_MATCH_AWARDS DIALOGEX 0, 0, 312, 206
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "",IDOK,255,7,50,14
+END
+
+IDD_ZJG_BAKER_STORAGE DIALOGEX 0, 0, 251, 129
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_ZJG_MONEY,75,70,121,17,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_ZJG_PASSWORD,77,97,118,16,ES_PASSWORD | ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_TRANSPARENT
+END
+
+IDD_ZJG_RECORD_PLAY DIALOGEX 0, 0, 261, 105
+STYLE DS_SETFONT | DS_3DLOOK | DS_FIXEDSYS | WS_POPUP | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_VOLUMN_SETTING DIALOGEX 0, 0, 289, 177
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CLIPCHILDREN | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_TOPMSG_DIALOG DIALOGEX 0, 0, 310, 177
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CLIPCHILDREN | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_GAME_CLOSE DIALOGEX 0, 0, 309, 177
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CLIPCHILDREN | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "",IDOK,76,142,50,14
+    PUSHBUTTON      "",IDCANCEL,179,142,50,14
+END
+
+IDD_MATCH_CONTROL DIALOGEX 0, 0, 204, 323
+STYLE DS_SETFONT | DS_CENTER | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_SYSMENU
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+    CONTROL         "",IDC_CHAT_MESSAGE2,"RichEdit20W",WS_VSCROLL | WS_TABSTOP | 0x904,17,169,160,103
+END
+
+IDD_GAME_GLAD_MESSAGE DIALOGEX 0, 0, 379, 18
+STYLE DS_SETFONT | WS_VISIBLE | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_COMMAND MENU
+BEGIN
+    POPUP "游戏房间"
+    BEGIN
+        MENUITEM "更多颜色",                        IDM_MORE_COLOR
+        MENUITEM "关闭房间",                        IDM_DELETE_SERVER_ITEM
+        MENUITEM SEPARATOR
+        MENUITEM "显示所有信息",                      IDM_MESSAGE_SHOW_ALL
+        MENUITEM "屏蔽厌恶信息",                      IDM_MESSAGE_HIDE_DETEST
+        MENUITEM "只显示好友信息",                     IDM_MESSAGE_ONLY_FRIEND
+    END
+    POPUP "用户菜单"
+    BEGIN
+        MENUITEM "与用户私聊",                       IDM_CREATE_ISER_WISPER
+        MENUITEM "拷贝用户名",                       IDM_COPY_USER_NICKNAME
+        MENUITEM SEPARATOR
+        MENUITEM "设置为好友",                       IDM_SET_FRIEND_USER
+        MENUITEM "设置为厌恶",                       IDM_ENTER_SERVER
+        MENUITEM SEPARATOR
+        MENUITEM "踢玩家下线",                       IDM_KICK_USER
+        MENUITEM SEPARATOR
+        MENUITEM "设置聊天对象",                      IDM_SET_CHAT_USER
+        MENUITEM "取消聊天对象",                      IDM_CANCEL_CHAT_USER
+        MENUITEM SEPARATOR
+        MENUITEM "查看用户资料",                      IDM_SHOW_USER_INFO
+        MENUITEM "设置备注信息",                      IDM_SET_USER_NOTE
+        MENUITEM "邀请加入游戏",                      IDM_INVITE_USER
+        MENUITEM SEPARATOR
+    END
+    POPUP "辅助命令"
+    BEGIN
+        MENUITEM "无效命令",                        IDM_DELETE_SERVER_ITEM
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_GAME_CONTROL, DIALOG
+    BEGIN
+    END
+
+    IDD_GAME_OPTION, DIALOG
+    BEGIN
+    END
+
+    IDD_GENERAL_OPTION, DIALOG
+    BEGIN
+    END
+
+    IDD_GAME_RULE, DIALOG
+    BEGIN
+    END
+
+    IDD_BANK_STORAGE, DIALOG
+    BEGIN
+    END
+
+    IDD_DLG_MATCH_AWARDS, DIALOG
+    BEGIN
+    END
+
+    IDD_ZJG_BAKER_STORAGE, DIALOG
+    BEGIN
+    END
+
+    IDD_ZJG_RECORD_PLAY, DIALOG
+    BEGIN
+    END
+
+    IDD_VOLUMN_SETTING, DIALOG
+    BEGIN
+    END
+
+    IDD_TOPMSG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_GAME_CLOSE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_MATCH_CONTROL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 197
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 316
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_GAME_CONTROL DLGINIT
+BEGIN
+    IDC_CHAT_EDIT, 0x403, 21, 0
+0xbbb2, 0xaad2, 0xdfd7, 0xaca3, 0xf6be, 0xbdd5, 0xbdb5, 0xeccc, 0xc1c1, 
+0xa3a1, "\000" 
+    IDC_CHAT_EDIT, 0x403, 23, 0
+0xcdba, 0xe3c4, 0xcfba, 0xf7d7, 0xe6d5, 0xc7ca, 0xabcc, 0xe4d3, 0xecbf, 
+0xb2c0, 0xa3a1, "\000" 
+    IDC_CHAT_EDIT, 0x403, 25, 0
+0xd9d4, 0xfbbc, 0xcbc1, 0xaca3, 0xd2ce, 0xe1bb, 0xebcf, 0xeec4, 0xf3b4, 
+0xd2bc, 0xc4b5, 0xa3a1, "\000" 
+    IDC_CHAT_EDIT, 0x403, 23, 0
+0xc2cf, 0xceb4, 0xd9d4, 0xe6cd, 0xc9b0, 0xaca3, 0xd2ce, 0xaad2, 0xdfd7, 
+0xcbc1, 0xa3a1, "\000" 
+    IDC_CHAT_EDIT, 0x403, 17, 0
+0xe3c4, 0xc7ca, 0x4d4d, 0xaca3, 0xb9bb, 0xc7ca, 0x4747, 0xbfa3, "\000" 
+    IDC_CHAT_EDIT, 0x403, 39, 0
+0xbbb2, 0xaad2, 0xb3b3, 0xcbc1, 0xaca3, 0xd0d3, 0xb2ca, 0xb4c3, 0xc3ba, 
+0xb3b3, 0xc4b5, 0xaca3, 0xa8d7, 0xc4d0, 0xe6cd, 0xced3, 0xb7cf, 0xc9b0, 
+0xa3a1, "\000" 
+    IDC_CHAT_EDIT, 0x403, 29, 0
+0xd6d3, 0xcfb6, 0xdfcf, 0xcbc1, 0xaca3, 0xf8cd, 0xe7c2, 0xf5d4, 0xb4c3, 
+0xe2d5, 0xb4c3, 0xeeb2, 0xa1b0, 0xa1a3, "\000" 
+    IDC_CHAT_EDIT, 0x403, 33, 0
+0xf7b8, 0xbbce, 0xaca3, 0xe6d5, 0xbbb2, 0xc3ba, 0xe2d2, 0xbccb, 0xaca3, 
+0xd2ce, 0xaad2, 0xebc0, 0xaabf, 0xbbd2, 0xe1bb, 0xa3a1, "\000" 
+    IDC_CHAT_EDIT, 0x403, 41, 0
+0xd2ce, 0xc7c3, 0xbbbd, 0xf6b8, 0xf3c5, 0xd1d3, 0xc9b0, 0xaca3, 0xdcc4, 
+0xe6b8, 0xdfcb, 0xd2ce, 0xe3c4, 0xc4b5, 0xaac1, 0xb5cf, 0xbdb7, 0xbdca, 
+0xf0c2, 0xbfa3, "\000" 
+    IDC_CHAT_EDIT, 0x403, 25, 0
+0xf3b4, 0xd2bc, 0xc3ba, 0xaca3, 0xdcba, 0xdfb8, 0xcbd0, 0xfbbc, 0xbdb5, 
+0xf7b8, 0xbbce, 0xa1a3, "\000" 
+    0
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "Res\GameFrame.rc2"  // 不是由 Microsoft Visual C++ 编辑过的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

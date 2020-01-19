@@ -1,0 +1,16 @@
+package CMD_LogonServer;
+
+option optimize_for = LITE_RUNTIME;
+
+// 游戏变量
+// KIND_ID						215									// 游戏 I D
+// MAXCOUNT						5									//扑克数目
+
+// 用户状态
+message PROTO_CESHI
+{
+	required int64				bUserID=1;							// 
+	required int32				cbPlayStatus=2;						// 
+	required int32				cbMaxCall=3;						//  
+}
+

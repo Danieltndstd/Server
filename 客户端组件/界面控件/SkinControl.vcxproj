@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_Unicode|Win32">
+      <Configuration>Debug_Unicode</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Unicode|Win32">
+      <Configuration>Release_Unicode</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>界面控件</ProjectName>
+    <ProjectGuid>{10AC72C9-82A7-4C08-8FF2-27730D76518D}</ProjectGuid>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">../../../../../发布组件/运行/Release/Unicode/</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">SkinControl</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">SkinControlD</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_AFXEXT;SKIN_CONTROL_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>../../../运行/Debug/Ansi/SkinControlD.dll</OutputFile>
+      <ModuleDefinitionFile>.\SkinControlD.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>../../链接库/Ansi/SkinControlD.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <PostBuildEvent>
+      <Command>mkdir ..\..\..\发布组件\客户端组件\Debug\Ansi
+copy /y ..\..\..\运行\Debug\Ansi\$(TargetFileName) ..\..\..\发布组件\客户端组件\Debug\Ansi\$(TargetFileName)
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_AFXEXT;SKIN_CONTROL_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>../../../运行/Release/Ansi/SkinControl.dll</OutputFile>
+      <ModuleDefinitionFile>.\SkinControl.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>../../链接库/Ansi/SkinControl.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <PostBuildEvent>
+      <Command>mkdir ..\..\..\发布组件\客户端组件\Release\Ansi
+copy /y ..\..\..\运行\Release\Ansi\$(TargetFileName) ..\..\..\发布组件\客户端组件\Release\Ansi\$(TargetFileName)
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_AFXEXT;SKIN_CONTROL_DLL;_UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>../../../../../发布组件/运行/Debug/Unicode/SkinControlD.dll</OutputFile>
+      <ModuleDefinitionFile>.\SkinControlD.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>../../链接库/Unicode/SkinControlD.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <PostBuildEvent>
+      <Command>mkdir ..\..\..\..\..\发布组件\客户端组件\Debug\Unicode
+copy /y ..\..\..\..\..\发布组件\运行\Debug\Unicode\$(TargetFileName) ..\..\..\..\..\发布组件\客户端组件\Debug\Unicode\$(TargetFileName)
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_AFXEXT;SKIN_CONTROL_DLL;_UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>../../链接库/Unicode/SkinControl.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <PostBuildEvent>
+      <Command>mkdir ..\..\..\..\..\发布组件\客户端组件\Release\Unicode
+copy /y ..\..\..\..\..\发布组件\运行\Release\Unicode\$(TargetFileName) ..\..\..\..\..\发布组件\客户端组件\Release\Unicode\$(TargetFileName)
+if exist "D:\Program Files (x86)\8099" copy /y "..\..\..\..\..\发布组件\运行\Release\Unicode\$(TargetFileName)" "D:\Program Files (x86)\8099\"
+if exist "D:\Program Files (x86)\8099-99" copy /y "..\..\..\..\..\发布组件\运行\Release\Unicode\$(TargetFileName)" "D:\Program Files (x86)\8099-99\"</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="PngButton.cpp" />
+    <ClCompile Include="SkinButton.cpp" />
+    <ClCompile Include="SkinComboBox.cpp" />
+    <ClCompile Include="SkinComboBoxEx.cpp" />
+    <ClCompile Include="SkinControl.cpp" />
+    <ClCompile Include="SkinDialog.cpp" />
+    <ClCompile Include="SkinEdit.cpp" />
+    <ClCompile Include="SkinEncircle.cpp" />
+    <ClCompile Include="SkinHeaderCtrl.cpp" />
+    <ClCompile Include="SkinHorizontalScrollbar.cpp" />
+    <ClCompile Include="SkinHyperLink.cpp" />
+    <ClCompile Include="SkinListCtrlEx.cpp" />
+    <ClCompile Include="SkinListCtrl.cpp" />
+    <ClCompile Include="SkinMenu.cpp" />
+    <ClCompile Include="SkinRenderManager.cpp" />
+    <ClCompile Include="SkinResourceManager.cpp" />
+    <ClCompile Include="SkinRichEdit.cpp" />
+    <ClCompile Include="SkinScrollBar.cpp" />
+    <ClCompile Include="SkinSplitter.cpp" />
+    <ClCompile Include="SkinTabCtrl.cpp" />
+    <ClCompile Include="SkinVerticleScrollbar.cpp" />
+    <ClCompile Include="Stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="memdc.h" />
+    <ClInclude Include="PngButton.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SkinButton.h" />
+    <ClInclude Include="SkinComboBox.h" />
+    <ClInclude Include="SkinComboBoxEx.h" />
+    <ClInclude Include="SkinControlHead.h" />
+    <ClInclude Include="SkinDialog.h" />
+    <ClInclude Include="SkinEdit.h" />
+    <ClInclude Include="SkinEncircle.h" />
+    <ClInclude Include="SkinHeaderCtrl.h" />
+    <ClInclude Include="SkinHorizontalScrollbar.h" />
+    <ClInclude Include="SkinHyperLink.h" />
+    <ClInclude Include="SkinListCtrlEx.h" />
+    <ClInclude Include="SkinListCtrl.h" />
+    <ClInclude Include="SkinMenu.h" />
+    <ClInclude Include="SkinRenderManager.h" />
+    <ClInclude Include="SkinResourceManager.h" />
+    <ClInclude Include="SkinRichEdit.h" />
+    <ClInclude Include="SkinScrollBar.h" />
+    <ClInclude Include="SkinSplitter.h" />
+    <ClInclude Include="SkinTabCtrl.h" />
+    <ClInclude Include="SkinVerticleScrollbar.h" />
+    <ClInclude Include="Stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Res\ENCIRCLE_BL.bmp" />
+    <None Include="Res\ENCIRCLE_BM.bmp" />
+    <None Include="Res\ENCIRCLE_BR.bmp" />
+    <None Include="Res\ENCIRCLE_ML.bmp" />
+    <None Include="Res\ENCIRCLE_MR.bmp" />
+    <None Include="Res\ENCIRCLE_TL.bmp" />
+    <None Include="Res\ENCIRCLE_TM.bmp" />
+    <None Include="Res\ENCIRCLE_TR.bmp" />
+    <None Include="Res\GAME_COMBO\BACK.png" />
+    <None Include="Res\GAME_COMBO\Button.bmp" />
+    <None Include="Res\GAME_LIST\ColumnHeaderEnd.bmp" />
+    <None Include="Res\GAME_LIST\ColumnHeaderSpan.bmp" />
+    <None Include="Res\GAME_LIST\ColumnHeaderSpan.png" />
+    <None Include="Res\GAME_LIST\ColumnHeaderStart.bmp" />
+    <None Include="Res\GAME_LIST\HorizontalScrollBarLeftArrow.png" />
+    <None Include="Res\GAME_LIST\HorizontalScrollBarRightArrow.png" />
+    <None Include="Res\GAME_LIST\HorizontalScrollBarSpan.bmp" />
+    <None Include="Res\GAME_LIST\HorizontalScrollBarSpan.png" />
+    <None Include="Res\GAME_LIST\HorizontalScrollBarThumb.bmp" />
+    <None Include="Res\GAME_LIST\HorizontalScrollBarThumb.png" />
+    <None Include="Res\GAME_LIST\ListCtrl_Tile.bmp" />
+    <None Include="Res\GAME_LIST\VerticleScrollbarBottom.bmp" />
+    <None Include="Res\GAME_LIST\VerticleScrollBarDownArrow.bmp" />
+    <None Include="Res\GAME_LIST\VerticleScrollBarSpan.bmp" />
+    <None Include="Res\GAME_LIST\VerticleScrollBarThumb.bmp" />
+    <None Include="Res\GAME_LIST\VerticleScrollbarTop.bmp" />
+    <None Include="Res\GAME_LIST\VerticleScrollBarUpArrow.bmp" />
+    <None Include="Res\HAND_CUR.cur" />
+    <None Include="Res\Shadow_bl.png" />
+    <None Include="Res\SHADOW_BM.png" />
+    <None Include="Res\SHADOW_BR.png" />
+    <None Include="Res\SHADOW_ML.png" />
+    <None Include="Res\SHADOW_MR.png" />
+    <None Include="Res\SHADOW_TL.png" />
+    <None Include="Res\SHADOW_TM.png" />
+    <None Include="Res\SHADOW_TR.png" />
+    <None Include="Res\SKIN_BUTTON.bmp" />
+    <None Include="Res\SKIN_COMBOBOX_BUTTON.bmp" />
+    <None Include="Res\SKIN_COMBOBOX_THUMB.bmp" />
+    <None Include="Res\SKIN_CURSOR.cur" />
+    <None Include="Res\SKIN_HEADER_L.bmp" />
+    <None Include="Res\SKIN_HEADER_M.bmp" />
+    <None Include="Res\SKIN_HEADER_R.bmp" />
+    <None Include="Res\SKIN_ICON.ico" />
+    <None Include="Res\SKIN_MENU_FLAGS.bmp" />
+    <None Include="Res\SKIN_SCROLL.bmp" />
+    <None Include="Res\SKIN_WND_BL.bmp" />
+    <None Include="Res\SKIN_WND_BL.png" />
+    <None Include="Res\SKIN_WND_BM.bmp" />
+    <None Include="Res\SKIN_WND_BM.png" />
+    <None Include="Res\SKIN_WND_BR.bmp" />
+    <None Include="Res\SKIN_WND_BR.png" />
+    <None Include="Res\SKIN_WND_BT.bmp" />
+    <None Include="Res\SKIN_WND_BUTTON.bmp" />
+    <None Include="Res\SKIN_WND_CLOSE.bmp" />
+    <None Include="Res\SKIN_WND_CLOSE.png" />
+    <None Include="Res\SKIN_WND_LOGO.png" />
+    <None Include="Res\SKIN_WND_LOGO2.png" />
+    <None Include="Res\SKIN_WND_MAX.bmp" />
+    <None Include="Res\SKIN_WND_MAX.png" />
+    <None Include="Res\SKIN_WND_MIN.bmp" />
+    <None Include="Res\SKIN_WND_MIN.png" />
+    <None Include="Res\SKIN_WND_ML.bmp" />
+    <None Include="Res\SKIN_WND_ML.png" />
+    <None Include="Res\SKIN_WND_MR.bmp" />
+    <None Include="Res\SKIN_WND_MR.png" />
+    <None Include="Res\SKIN_WND_RESORE.bmp" />
+    <None Include="Res\SKIN_WND_RESTORE.bmp" />
+    <None Include="Res\SKIN_WND_RESTORE.png" />
+    <None Include="Res\SKIN_WND_TL.bmp" />
+    <None Include="Res\SKIN_WND_TL.png" />
+    <None Include="Res\SKIN_WND_TM.bmp" />
+    <None Include="Res\SKIN_WND_TM.png" />
+    <None Include="Res\SKIN_WND_TR.bmp" />
+    <None Include="Res\SKIN_WND_TR.png" />
+    <None Include="res\SkinControl.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SkinControl.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\图像控件\WHImage.vcxproj">
+      <Project>{a8e64f0b-3137-4993-a512-22cc787f7627}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="SkinControl.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
